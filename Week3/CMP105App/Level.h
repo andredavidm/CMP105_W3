@@ -15,6 +15,20 @@ public:
 	void update(float dt);
 	void render();
 
+
+	sf::CircleShape circle;
+	float xspeed;
+	float yspeed;
+	
+	sf::CircleShape player;
+	float xplayer;
+	float yplayer;
+	float acel;
+	int ydirection;
+	int xdirection;
+
+	bool changing;
+
 private:
 	// Default functions for rendering to the screen.
 	void beginDraw();
